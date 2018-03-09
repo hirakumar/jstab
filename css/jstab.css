@@ -1,0 +1,7 @@
+	.tabControl .tablinks ul {list-style:none}
+	.tabControl .tablinks ul li {float:left; }
+	.tabControl .tablinks ul li a {border:solid 2px #ccc; display:inline-block; padding:5px;}
+	.tabControl .tabs{clear:both; display:block}
+	.tabControl .tab{display:none}
+	.tabControl .tab.activeTab{display:block}
+	.tablinks a.active{font-weight:bold}

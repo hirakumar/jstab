@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Tab</title>
+		<link href="css/jstab.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	
+	<div class="tabControl" id="myTab">
+		<nav class="tablinks">
+			<ul>
+				<li><a href="#page1" class="active">Page 1</a></li>
+				<li><a href="#page2">Page 2</a></li>
+				<li><a href="#page3">Page 3</a></li>
+				<li><a href="#page4">Page 4</a></li>
+			</ul>
+		</nav>
+		<div class="tabs">
+			<div class="tab activeTab" id="page1">
+				This is page1
+			</div>
+			<div class="tab" id="page2">
+				This is page2
+			</div>
+			<div class="tab" id="page3">
+				This is page3
+			</div>
+		</div>
+	</div>
+	<script src="js/jstab.js"></script>
+	<script>
+	
+	
+	let tabControl=new TabControl("#myTab");
+	tabControl.init();
+	
+	</script>
+	</body>
+</html>
