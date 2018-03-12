@@ -13,19 +13,29 @@
 			<ul>
 				<li><a href="#page1" class="active">Page 1</a></li>
 				<li><a href="#page2">Page 2</a></li>
-				<li><a href="#page3">Page 3</a></li>
-				<li><a href="#page4">Page 4</a></li>
+				<li><a href="#page3" id="page3">Page 3</a></li>
+				
 			</ul>
 		</nav>
 		<div class="tabs">
 			<div class="tab activeTab" id="page1">
-				This is page1
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis purus eu euismod rhoncus. Phasellus massa mauris, egestas quis mauris vitae, congue dapibus urna. Nulla volutpat eget ex nec tempus.</p>
+				<p>Suspendisse augue magna, porttitor eget est non, semper fringilla libero. Ut eget sapien sed magna euismod pharetra. Nunc ultricies metus at diam euismod, vel varius augue fermentum. </p>
+				<p>In imperdiet, velit sit amet placerat porta, velit libero commodo nulla, in volutpat mauris velit a metus. Quisque interdum porta mi sit amet consequat. </p>
+				<p>Nam pretium elit vel ullamcorper condimentum. Maecenas id urna tempor, vulputate purus id, placerat erat. In in efficitur dui. Curabitur dictum vulputate tellus, eget consectetur erat. </p>
+				<p>Morbi sit amet tincidunt enim. Duis tempus mauris at sem malesuada porta. Donec at laoreet ex.</p>
 			</div>
 			<div class="tab" id="page2">
-				This is page2
+				<h3>Etiam sit amet</h3>
+				<p>Etiam sit amet mauris quis ligula pretium egestas quis ac felis. In lacinia nisi enim, vel pellentesque tortor luctus ut. In consequat mattis mi ut scelerisque. Fusce tempor aliquam tempus.</p>
+				<p>Praesent dignissim, diam sed semper porttitor, elit risus molestie velit, quis vehicula mi arcu ut nulla. Etiam pulvinar porttitor sem. Ut ut eros vel urna interdum dapibus. Fusce congue iaculis posuere.</p>
 			</div>
 			<div class="tab" id="page3">
-				This is page3
+				<h3>In vel lacus porttitor</h3>
+				<p>In vel lacus porttitor, varius magna quis, tincidunt ligula. Mauris scelerisque orci vel dolor lacinia dignissim. Praesent tincidunt vitae risus sit amet euismod. </p>
+				<p>Donec tempor viverra sapien, at iaculis urna iaculis quis. Vivamus vel sem vulputate, luctus arcu nec, ultrices felis. Fusce ornare, ipsum eget dictum dapibus, leo velit consectetur dui</p>
+				<p>Ut feugiat enim nibh et ligula. Integer id nibh eu neque rhoncus consequat. Pellentesque imperdiet odio at tristique consectetur.</p>
 			</div>
 		</div>
 	</div>
@@ -33,8 +43,8 @@
 	<script>
 	
 	
-	let tabControl=new TabControl("#myTab");
-	tabControl.init();
+	const tabControl=new TabControl().init("#myTab");
+	
 	
 	</script>
 	</body>
