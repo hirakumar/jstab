@@ -40,7 +40,19 @@ HTML CODE
 			</div>
 		</div>
 ```
+CSS CODE
 
+```
+.tabControl {font-family:arial,san-serif; font-size:14px;}
+.tabControl  ul.tablinks {list-style:none;position:relative; top:1px; z-index:2}
+.tabControl  ul.tablinks li {float:left; margin-right:5px; }
+.tabControl ul.tablinks li a {border:solid 1px gray; display:inline-block; padding:5px; background:white; text-decoration:none; color:#333;}
+.tabControl ul.tablinks li a.active{font-weight:bold; border-bottom:solid 1px white;}
+.tabControl .tabs{clear:both; display:block; border:solid 1px gray; color:#333;}
+.tabControl .tab{display:none;  padding:20px; background:white}
+.tabControl .tab.activeTab{display:block; border-bottom:solid 1px white}
+.tabControl .tab.activeTab{ padding:20px; }
+```
 JAVASCRIPT CODE : Make sure you are puting javascript at bottom of html before closing body tag </body>
 
 ```
