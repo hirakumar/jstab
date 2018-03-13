@@ -93,3 +93,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Inspiration
 * etc
 
+## Change Log
+
+```
+Ver :1.1
+
+- Make working for multiple tab in single page with class name
+
+Ver :1.2
+- Make clickable if user click on child element of tab links
+
+```
