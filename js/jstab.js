@@ -1,5 +1,5 @@
 /*
-	JS Tab v1.3
+	JS Tab v1.3.1
 	Author : Hira Kumar Maharjan
 	URL : https://github.com/hirakumar/jstab
 	License : MIT license

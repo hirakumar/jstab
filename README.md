@@ -67,30 +67,34 @@ new TabControl("#tabControl");
 * Constructor Parameters: String,Object
 
 
-Default Property of TabControl Object
-
 **A. First Argument** = String *(Strict)*
-		   Description : Accept String of css selector
+Description : Accept String of css selector
 		
 **B. Second Argument** = Object *(Optional)*
    Description : It is optional and it accept Object with following property
 
-* Active Tab Link Class
-name : activeTabLinkClass
-default: 'active'
+1. **activeTabLinkClass (String)**
+default Value: 'active'
 description: Active Tab button's anchor's class
 
-* Active Tab Class
-name : activeTabClass
-default: 'activeLi'
+2. **activeTabClass (String)**
+default Value: 'activeLi'
 description: Active Tab button's class
 
-* Active Tab Box Class
-name : activeTabBoxClass
-default: 'activeTab'
+3. **activeTabBoxClass (String)**
+default value: 'activeTab'
 description: Active Tab Box's class
 
+## Default Arguments of TabControl Object
 
+```
+new TabControl("#tabControl",{
+	activeTabLinkClass:'active',
+	activeTabClass:'activeLi',
+	activeTabBoxClass:'activeTab'
+});
+
+```
 
 ## Contributing
 
