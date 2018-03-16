@@ -58,20 +58,39 @@ JAVASCRIPT CODE : Make sure you are puting javascript at bottom of html before c
 ```
 <script src="js/jstab.js"></script>
 <script>
-const tabControl=new TabControl(".tabControl");
+new TabControl("#tabControl");
 </script>
 ```
 ## Documentation
 
 * Object : TabControl
-* Constructor Parameters: String
+* Constructor Parameters: String,Object
 
 
 Default Property of TabControl Object
 
-* TabControl.activeTabLinkClass="active";
-* TabControl.activeTabClass="activeLi";
-* TabControl.activeTabBoxClass="activeTab";
+**A. First Argument** = String *(Strict)*
+		   Description : Accept String of css selector
+		
+**B. Second Argument** = Object *(Optional)*
+   Description : It is optional and it accept Object with following property
+
+* Active Tab Link Class
+name : activeTabLinkClass
+default: 'active'
+description: Active Tab button's anchor's class
+
+* Active Tab Class
+name : activeTabClass
+default: 'activeLi'
+description: Active Tab button's class
+
+* Active Tab Box Class
+name : activeTabBoxClass
+default: 'activeTab'
+description: Active Tab Box's class
+
+
 
 ## Contributing
 

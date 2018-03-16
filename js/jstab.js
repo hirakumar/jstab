@@ -1,19 +1,57 @@
 /*
-	JS Tab v1.2
+	JS Tab v1.3
 	Author : Hira Kumar Maharjan
 	URL : https://github.com/hirakumar/jstab
 	License : MIT license
 	Date : 2018-03-13
 	**************************************
-	Default Property of TabControl Object
+	Documentation
 	**************************************
-	TabControl.activeTabLinkClass="active";
-	TabControl.activeTabClass="activeLi";
-	TabControl.activeTabBoxClass="activeTab";
-	
+	1. General
+		
+		## Object
+		TabControl(string,Obj)
+		
+		A. First Argument = String (Strict)
+		   Description : Accept String of css selector
+		
+		B. Second Argument = Object (Optional)
+		   Description : It is optional and it accept Object with following property
+		
+		## Active Tab Link Class
+		name : activeTabLinkClass
+		default: 'active'
+		description: Active Tab button's anchor's class
+		
+		## Active Tab Class
+		name : activeTabClass
+		default: 'activeLi'
+		description: Active Tab button's class
+		
+		## Active Tab Box Class
+		name : activeTabBoxClass
+		default: 'activeTab'
+		description: Active Tab Box's class
+		
 */
-
-const TabControl=function(myTab){
+"use strict";
+const TabControl=function(myTab,obj){
+	if(obj!=undefined){
+		console.log("Obj"+obj);
+		if(obj.activeTabLinkClass!=undefined){
+			this.activeTabLinkClass=obj.activeTabLinkClass;
+		}
+		if(obj.activeTabClass!=undefined){
+			this.activeTabClass=obj.activeTabClass;
+		}
+		if(obj.activeTabBoxClass!=undefined){
+			this.activeTabBoxClass=obj.activeTabBoxClass;
+			console.log(obj.activeTabBoxClass);
+		}
+	}
+	if(document.querySelectorAll(myTab).length<1){
+		return false;
+	}
 	this.myTab=document.querySelectorAll(myTab)[0];
 	for(let i=0; i<this.myTab.children.length; i++){
 				
@@ -24,9 +62,11 @@ const TabControl=function(myTab){
 				let alink=li[j].children[0];
 				alink.addEventListener("click",this.processTab.bind(this),false);
 			}
+			
 		}
 				
 	}
+	
 	this.loadData=this.processTab.bind(this);
 	window.addEventListener("hashchange",this.processTab.bind(this),false);
 	window.addEventListener("load",this.processTab.bind(this),false);
@@ -35,6 +75,7 @@ const TabControl=function(myTab){
 TabControl.prototype.activeTabLinkClass="active";
 TabControl.prototype.activeTabClass="activeLi";
 TabControl.prototype.activeTabBoxClass="activeTab";
+TabControl.prototype.mode="fade";
 
 //Find <a> in htmldocument which is hashText and return <a> tag
 TabControl.prototype.sendHashLink=function(hash){
@@ -44,6 +85,7 @@ TabControl.prototype.sendHashLink=function(hash){
 		if(myPage[1]==hash){
 			return allLinks[i];
 		}
+		
 	}
 }
 
