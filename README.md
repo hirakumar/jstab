@@ -102,7 +102,7 @@ Please read [CONTRIBUTING.md](https://github.com/hirakumar/jstab) for details on
 
 ## Authors
 
-* **Hira Kumar Maharjan** - *Initial work* - [Responsive Images](https://github.com/hirakumar/jstab)
+* **Hira Kumar Maharjan** - *Initial work* - [JS Tab](https://github.com/hirakumar/jstab)
 
 See also the list of [contributors](https://github.com/hirakumar/jstab/contributors) who participated in this project.
 
@@ -110,11 +110,6 @@ See also the list of [contributors](https://github.com/hirakumar/jstab/contribut
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
 ## Change Log
 
@@ -127,7 +122,7 @@ Ver :1.2
 - Make clickable if user click on child element of tab links
 
 Ver :1.3.1
-- Solve it document css selector on html document
+- Solve issue if document css selector on html document
 - Removed paramenter value with Object .
 
 ```
