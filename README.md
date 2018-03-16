@@ -126,4 +126,8 @@ Ver :1.1
 Ver :1.2
 - Make clickable if user click on child element of tab links
 
+Ver :1.3.1
+- Solve it document css selector on html document
+- Removed paramenter value with Object .
+
 ```
